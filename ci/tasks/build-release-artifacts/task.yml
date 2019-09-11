@@ -7,11 +7,11 @@ image_resource:
     repository: ruby
 
 inputs:
-  - name: boshrelease
+  - name: chart
   - name: version
 
 outputs:
   - name: release-artifacts
 
 run:
-  path: boshrelease/ci/tasks/build-release-artifacts/task.rb
+  path: chart/ci/tasks/build-release-artifacts/task.rb
