@@ -14,7 +14,7 @@ chart_checksum_file=${final_chart_artifacts_dir}/${chart_name}.tgz.sha256
 
 echo 'Create final release tarball...'
 cd ${chart_dir}
-tar --exclude ./ci -czvf ${chart_tarball_file} .
+tar --exclude ci/ --exclude .git/ --exclude .gitignore -czvf ${chart_tarball_file} .
 
 echo 'Create checksum for final release...'
 cd ${final_chart_artifacts_dir}
