@@ -2,7 +2,7 @@
 replicaCount: 2
 image:
   repository: anyninesgmbh/cfeu19-sample-app
-  tag: latest
+  tag: v0.2.4
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 nameOverride: ''
