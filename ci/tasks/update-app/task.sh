@@ -19,7 +19,7 @@ cd ${updated_app_repository_dir}
 echo 'Update values...'
 if ci/tasks/update-app/update-values.rb ${app_tag}; then
   echo 'Commit updated values...'
-  git add values.yml
+  git add values.yaml
   git commit -m "Update App to ${app_tag}"
 fi
 
