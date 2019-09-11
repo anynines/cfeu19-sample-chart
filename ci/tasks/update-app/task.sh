@@ -17,7 +17,7 @@ cd ${updated_app_repository_dir}
 
 # Make it idempotent
 echo 'Update values...'
-if ci/tasks/update-values.rb ${app_tag}; then
+if ci/tasks/update-app/update-values.rb ${app_tag}; then
   echo 'Commit updated values...'
   git add values.yml
   git commit -m "Update App to ${app_tag}"
