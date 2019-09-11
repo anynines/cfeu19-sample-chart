@@ -8,6 +8,10 @@ image_resource:
 
 inputs:
   - name: chart
+  - name: version
+
+outputs:
+  - name: final-chart-artifacts
 
 run:
   path: chart/ci/tasks/build-final-release/task.sh
